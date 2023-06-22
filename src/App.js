@@ -2,15 +2,13 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import IntroSection from "./components/Hero/IntroSection";
 
-function App() {
+const App = () => {
   return (
-    <div className="dark:bg-[#232931] h-screen overflow-x-hidden">
+    <div className=" w-full h-screen dark:bg-[#232931] overflow-x-hidden ">
       <Navbar />
-      <div className="  max-w-[90%] md:max-w-[80%] mx-auto">
-        <IntroSection />
-      </div>
+      <IntroSection />
     </div>
   );
-}
+};
 
 export default App;

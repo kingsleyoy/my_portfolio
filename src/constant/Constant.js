@@ -8,13 +8,10 @@ export const navList = [
     id: "about",
   },
   {
-    name: "Skill",
-    id: "skill",
+    name: "Experience",
+    id: "experience",
   },
-  {
-    name: "Hire",
-    id: "hire",
-  },
+
   {
     name: "Project",
     id: "project",
