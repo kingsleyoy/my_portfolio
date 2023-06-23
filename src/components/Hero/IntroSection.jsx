@@ -9,7 +9,7 @@ import {
 
 const IntroSection = () => {
   return (
-    <div className="w-full pt-10 mont h-[80%]">
+    <div className="w-full py-10  mont h-auto md:h-[80%]">
       <div className=" w-[90%] md:w-[80%] mx-auto flex flex-col-reverse md:flex-row gap-20">
         <div className=" md:w-1/2 flex flex-col justify-center md:leading-[2]">
           <em className=" mycolor font-bold text-xl md:text-2xl capitalize pt-8">

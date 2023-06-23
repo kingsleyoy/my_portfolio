@@ -36,10 +36,7 @@ const Navbar = () => {
   });
 
   return (
-    <div
-      id="navi"
-      className=" w-full sticky top-0 bg-white dark:bg-[#232931] z-[999]"
-    >
+    <div className=" w-full sticky top-0 bg-white dark:bg-[#232931] z-[999]">
       <div className=" w-[90%] md:w-[80%] mx-auto flex justify-between items-center h-10 md:h-[60px] mont text-[#555] dark:text-white">
         <h3 className=" font-bold uppercase md:text-xl text-lg z-[999]">
           King<span className=" text-[#4ECCA3]">sley</span>
