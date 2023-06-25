@@ -14,13 +14,6 @@ const Experiment = () => {
       heading: " BackEnd Nodejs developer",
       content: "online and self-taught",
     },
-
-    {
-      id: 3,
-      year: "2021 - present",
-      heading: " Git & Github version control",
-      content: "Nnamdi Azikiwe University, Nigeria",
-    },
   ];
   return (
     <div className=" md:-ml-[300px]">
