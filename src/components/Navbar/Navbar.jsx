@@ -10,13 +10,15 @@ const Navbar = () => {
 
   const handleOpen = () => {
     setOpen(!open);
+    localStorage.setItem("mode", `${open}`);
   };
 
   const handleMenu = () => {
     setMenu(!menu);
   };
-
-  if (open === true) {
+  const shade = localStorage.getItem("mode");
+  console.log(shade);
+  if (shade === "true") {
     document.documentElement.classList.add("dark");
   } else {
     document.documentElement.classList.remove("dark");
@@ -26,14 +28,14 @@ const Navbar = () => {
     setMenu(false);
   };
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 0) {
-      console.log("scrolling");
-    } else {
-      console.log("not scrolling");
-    }
-    console.log("scrolling");
-  });
+  // window.addEventListener("scroll", () => {
+  //   if (window.scrollY > 0) {
+  //     console.log("scrolling");
+  //   } else {
+  //     console.log("not scrolling");
+  //   }
+  //   console.log("scrolling");
+  // });
 
   return (
     <div className=" w-full sticky top-0 bg-white dark:bg-[#232931] z-[999]">
@@ -47,7 +49,11 @@ const Navbar = () => {
               onClick={handleOpen}
               className=" hover:text-[#ff0] cursor-pointer"
             >
-              {open ? <BsSun size={20} /> : <BsMoonStarsFill size={20} />}
+              {`${open}` === "true" ? (
+                <BsMoonStarsFill size={20} />
+              ) : (
+                <BsSun size={20} />
+              )}
             </span>
           </li>
           {navList.map(({ id, name }) => (
@@ -79,7 +85,11 @@ const Navbar = () => {
                 onClick={handleOpen}
                 className=" hover:text-[#ff0] cursor-pointer"
               >
-                {open ? <BsSun size={20} /> : <BsMoonStarsFill size={20} />}
+                {`${open}` === "true" ? (
+                  <BsMoonStarsFill size={20} />
+                ) : (
+                  <BsSun size={20} />
+                )}
               </span>
             </li>
             {navList.map(({ id, name }) => (
