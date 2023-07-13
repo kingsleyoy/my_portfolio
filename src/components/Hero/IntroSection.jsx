@@ -22,9 +22,8 @@ const IntroSection = () => {
             Fullstack web developer
           </h2>
           <p className=" text-[13px] md:text-[15px] dark:text-[#FAFAFA]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            aut consectetur voluptatem dolores corporis necessitatibus eum illo
-            ex itaque ad!
+            I'm passionate full-stack developer with a keen eye for creating
+            innovative web solutions.
           </p>
 
           <div className=" flex flex-col md:flex-row gap-5 pt-4">

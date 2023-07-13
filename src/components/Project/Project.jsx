@@ -7,7 +7,7 @@ const Project = () => {
     <div className=" bg-[#EEEEEE] w-full py-10 md:py-14 mont">
       <div className="  w-[90%] md:w-[80%] mx-auto ">
         <div className=" md:flex justify-between mb-12">
-          <h2 className=" text-xl md:text-2xl font-bold  capitalize myblack pb-5 md:pb-8 text-center md:text-justify">
+          <h2 className=" text-xl md:text-2xl font-bold  capitalize myblack pb-2 md:pb-8 text-center md:text-justify">
             My Project
           </h2>
           <a href="http">
