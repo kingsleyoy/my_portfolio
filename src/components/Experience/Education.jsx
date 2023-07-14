@@ -20,7 +20,7 @@ const Education = () => {
       className=" md:-ml-[300px]
      "
     >
-      <h3 className=" text-xl pb-8 font-semibold myblack dark:text-[#EEEEEE] pt-8 ">
+      <h3 className=" text-lg md:text-xl pb-8 font-semibold myblack dark:text-[#EEEEEE] pt-8 ">
         Education
       </h3>
       <div className=" border-l-2 border-l-[#4ECCA3] h-auto flex flex-col relative">

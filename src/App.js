@@ -4,6 +4,7 @@ import IntroSection from "./components/Hero/IntroSection";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 import Project from "./components/Project/Project";
+import Choose from "./components/Chooseme/Choose";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <About />
       <Experience />
       <Project />
+      <Choose />
     </div>
   );
 };

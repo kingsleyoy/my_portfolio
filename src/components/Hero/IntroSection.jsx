@@ -22,13 +22,13 @@ const IntroSection = () => {
             Fullstack web developer
           </h2>
           <p className=" text-[13px] md:text-[15px] dark:text-[#FAFAFA]">
-            I'm passionate full-stack developer with a keen eye for creating
+            I'm a passionate full-stack developer with a keen eye for creating
             innovative web solutions.
           </p>
 
           <div className=" flex flex-col md:flex-row gap-5 pt-4">
             <a href="mailto:kingsleyoyeokz@gmail.com">
-              <button className=" border-2 px-5 border-[#4ECCA3] mycolor font-semibold rounded-full hover:bg-[#4ECCA3] hover:text-[#444]">
+              <button className=" border-2 px-5 py-1 md:py-[4px] border-[#4ECCA3] mycolor font-semibold rounded-full hover:bg-[#4ECCA3] hover:text-[#444]">
                 Hire me
               </button>
             </a>
@@ -38,16 +38,16 @@ const IntroSection = () => {
                 follow me:
               </p>
               <div className=" flex gap-2 ">
-                <span className=" border-[1px] p-[2px] border-[#4ECCA3] mycolor rounded-full">
+                <span className=" border-[1px] p-[2px] text-xl md:text-lg border-[#4ECCA3] mycolor rounded-full">
                   <FaFacebookF />
                 </span>
-                <span className=" border-[1px] p-[2px] border-[#4ECCA3] mycolor rounded-full">
+                <span className=" border-[1px] p-[2px] text-xl md:text-lg border-[#4ECCA3] mycolor rounded-full">
                   <FaTwitter />
                 </span>
-                <span className=" border-[1px] p-[2px] border-[#4ECCA3] mycolor rounded-full">
+                <span className=" border-[1px] p-[2px] text-xl md:text-lg border-[#4ECCA3] mycolor rounded-full">
                   <FaInstagram />
                 </span>
-                <span className=" border-[1px] p-[2px] border-[#4ECCA3] mycolor rounded-full">
+                <span className=" border-[1px] p-[2px] text-xl md:text-lg border-[#4ECCA3] mycolor rounded-full">
                   <FaLinkedinIn />
                 </span>
               </div>
