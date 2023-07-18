@@ -1,23 +1,28 @@
 export const navList = [
   {
     name: "home",
-    id: "home",
+    id: "001",
+    link: "hero",
   },
   {
     name: "About",
-    id: "about",
+    id: "002",
+    link: "about",
   },
   {
     name: "Experience",
-    id: "experience",
+    id: "003",
+    link: "experience",
   },
 
   {
     name: "Project",
-    id: "project",
+    id: "004",
+    link: "project",
   },
   {
     name: "Contact",
-    id: "contact",
+    id: "005",
+    link: "contact",
   },
 ];

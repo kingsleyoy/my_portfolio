@@ -3,7 +3,7 @@ import Aboutme from "../../assets/About.png";
 
 const About = () => {
   return (
-    <div className=" bg-[#EEEEEE] w-full py-12 md:py-14 mont">
+    <div className=" bg-[#EEEEEE] w-full py-12 md:py-14 mont" id="about">
       <div className=" w-[90%] md:w-[80%] mx-auto flex flex-col md:flex-row gap-10">
         <div className=" hidden md:flex md:w-1/2  justify-center">
           <div className=" w-[350px] h-[350px]">

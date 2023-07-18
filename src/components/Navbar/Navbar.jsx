@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import { BsMoonStarsFill, BsSun } from "react-icons/bs";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { navList } from "../../constant/Constant";
@@ -18,6 +19,7 @@ const Navbar = () => {
   };
   const shade = localStorage.getItem("mode");
   console.log(shade);
+
   if (shade === "true") {
     document.documentElement.classList.add("dark");
   } else {
@@ -27,15 +29,6 @@ const Navbar = () => {
   const closeMenu = () => {
     setMenu(false);
   };
-
-  // window.addEventListener("scroll", () => {
-  //   if (window.scrollY > 0) {
-  //     console.log("scrolling");
-  //   } else {
-  //     console.log("not scrolling");
-  //   }
-  //   console.log("scrolling");
-  // });
 
   return (
     <div className=" w-full sticky top-0 bg-white dark:bg-[#232931] z-[999]">
@@ -56,12 +49,21 @@ const Navbar = () => {
               )}
             </span>
           </li>
-          {navList.map(({ id, name }) => (
+          {navList.map(({ id, name, link }) => (
             <li
               key={id}
               className=" hover:text-[#4ECCA3] duration-300 cursor-pointer"
             >
-              {name}
+              <Link
+                activeClass="active"
+                to="contact" //could be the name of the id
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                {name}
+              </Link>
             </li>
           ))}
         </ul>
@@ -92,13 +94,23 @@ const Navbar = () => {
                 )}
               </span>
             </li>
-            {navList.map(({ id, name }) => (
+            {navList.map(({ id, name, link }) => (
               <li
                 key={id}
                 className=" py-5 hover:text-[#4ECCA3]"
                 onClick={closeMenu}
               >
-                {name}
+                <Link
+                  activeClass="active"
+                  to={link} //could be the name of the id
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  onClick={closeMenu}
+                >
+                  {name}
+                </Link>
               </li>
             ))}
           </ul>
