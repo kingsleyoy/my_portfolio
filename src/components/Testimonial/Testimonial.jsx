@@ -18,7 +18,7 @@ const Testimonial = () => {
           Testimonials
         </h3>
 
-        <div className=" hidden md:block">
+        <div className=" hidden md:block mont">
           <Swiper
             modules={[Navigation, Pagination, A11y]}
             spaceBetween={50}
@@ -150,7 +150,7 @@ const Testimonial = () => {
           </Swiper>
         </div>
 
-        <div className=" md:hidden">
+        <div className=" w-[90%] mx-auto md:hidden mont">
           <Swiper
             modules={[Navigation, Pagination, A11y]}
             spaceBetween={50}
@@ -161,37 +161,7 @@ const Testimonial = () => {
             onSwiper={(swiper) => console.log(swiper)}
           >
             <SwiperSlide>
-              <div className=" rounded-md shadow-2xl py-12 border-solid border-[#393E46] border-[1px]">
-                <div className=" w-[90%] mx-auto flex flex-col gap-5">
-                  <div className=" ">
-                    "
-                    <em>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Natus error qui doloremque nisi, molestiae harum!
-                    </em>
-                    "
-                  </div>
-
-                  <div className=" flex justify-center items-center gap-3">
-                    <span className=" w-20 h-20  ">
-                      <img
-                        src={pics2}
-                        alt="pix"
-                        className=" rounded-full shadow object-cover w-full h-full"
-                      />
-                    </span>
-
-                    <div>
-                      <p>name</p>
-                      <p>title</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className=" rounded-md shadow-2xl py-12 border-solid border-[#393E46] border-[1px]">
+              <div className=" rounded-md py-10 border-solid border-[#393E46] border-[1px] shadow-2xl ">
                 <div className=" w-[90%] mx-auto flex flex-col gap-5">
                   <div className=" ">
                     "
@@ -221,7 +191,7 @@ const Testimonial = () => {
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className=" rounded-md shadow-2xl py-12 border-solid border-[#393E46] border-[1px]">
+              <div className=" rounded-md py-10 border-solid border-[#393E46] border-[1px] shadow-2xl ">
                 <div className=" w-[90%] mx-auto flex flex-col gap-5">
                   <div className=" ">
                     "
@@ -251,7 +221,37 @@ const Testimonial = () => {
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className=" rounded-md shadow-2xl py-12 border-solid border-[#393E46] border-[1px]">
+              <div className=" rounded-md py-10 border-solid border-[#393E46] border-[1px] shadow-2xl ">
+                <div className=" w-[90%] mx-auto flex flex-col gap-5">
+                  <div className=" ">
+                    "
+                    <em className=" text-[#000]">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus error qui doloremque nisi, molestiae harum!
+                    </em>
+                    "
+                  </div>
+
+                  <div className=" flex justify-center items-center gap-3">
+                    <span className=" w-20 h-20  ">
+                      <img
+                        src={pics2}
+                        alt="pix"
+                        className=" rounded-full shadow object-cover w-full h-full"
+                      />
+                    </span>
+
+                    <div>
+                      <p>name</p>
+                      <p>title</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className=" rounded-md py-10 border-solid border-[#393E46] border-[1px] shadow-2xl ">
                 <div className=" w-[90%] mx-auto flex flex-col gap-5">
                   <div className=" ">
                     "
