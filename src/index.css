@@ -36,5 +36,22 @@
     color: #393E46;
 }
 
+input{
+   margin-bottom: 10px;
+   width: 100%;
+   outline-color: #4ECCA3;
+   padding-top: 10px;
+   padding-left: 10px;
+   background-color: #393E46;
+   color: #EEEEEE;
+}
 
+textarea{
+    margin-bottom: 10px;
+    width: 100%;
+    outline-color: #4ECCA3;
+    padding-left: 10px;
+    background-color: #393E46;
+    color: #EEEEEE;
+}
 
