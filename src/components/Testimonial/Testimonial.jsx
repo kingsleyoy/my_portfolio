@@ -1,6 +1,6 @@
 import React from "react";
 import pics2 from "../../assets/pic2.jpg";
-import { Navigation, Pagination, A11y } from "swiper/modules";
+import { Autoplay, Navigation, Pagination, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import "swiper/css";
 // import "swiper/css/navigation";
@@ -152,10 +152,13 @@ const Testimonial = () => {
 
         <div className=" w-[90%] mx-auto md:hidden mont">
           <Swiper
-            modules={[Navigation, Pagination, A11y]}
+            modules={[Autoplay, Navigation, Pagination, A11y]}
             spaceBetween={50}
             slidesPerView={1}
             Navigation
+            autoplay={{
+              delay: 5000,
+            }}
             pagination={{ clickable: true }}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
