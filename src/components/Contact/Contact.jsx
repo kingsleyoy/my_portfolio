@@ -3,7 +3,7 @@ import { FaPhone, FaMailBulk, FaLocationArrow } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div id="contact" className="  w-full py-10 md:py-14 mont">
+    <div className="  w-full py-10 md:py-14 mont " id="contact">
       <div className="  w-[90%] md:w-[80%] mx-auto ">
         <h3 className="text-xl md:text-2xl font-bold myshade md:pb-8 text-center md:text-left dark:text-[#EEEEEE] capitalize">
           Contact Me

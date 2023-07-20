@@ -4,7 +4,7 @@ import { MdComputer, MdPeopleOutline } from "react-icons/md";
 
 const Choose = () => {
   return (
-    <div className="  w-full py-10 md:py-14 mont">
+    <div className="  w-full py-10 md:py-14 mont ">
       <div className="  w-[90%] md:w-[80%] mx-auto ">
         <h3 className="text-xl md:text-2xl font-bold myshade pb-5 md:pb-8  dark:text-[#EEEEEE] text-center capitalize">
           Why choose me

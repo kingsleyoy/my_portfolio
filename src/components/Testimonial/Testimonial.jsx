@@ -12,7 +12,7 @@ import "swiper/scss/pagination";
 
 const Testimonial = () => {
   return (
-    <div className=" bg-[#EEEEEE] w-full py-10 md:py-14 mont">
+    <div className=" bg-[#EEEEEE] w-full py-10 md:py-14 mont ">
       <div className="  w-[90%] md:w-[80%] mx-auto ">
         <h3 className="text-xl md:text-2xl font-bold myshade pb-5 md:pb-8 text-center capitalize">
           Testimonials
@@ -20,13 +20,11 @@ const Testimonial = () => {
 
         <div className=" hidden md:block mont">
           <Swiper
-            modules={[Navigation, Pagination, A11y]}
+            modules={[Pagination, A11y]}
             spaceBetween={50}
             slidesPerView={3}
             Navigation
             pagination={{ clickable: true }}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
           >
             <SwiperSlide>
               <div className=" rounded-md shadow-2xl py-12 border-solid border-[#393E46] border-[1px]">
@@ -160,8 +158,6 @@ const Testimonial = () => {
               delay: 5000,
             }}
             pagination={{ clickable: true }}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
           >
             <SwiperSlide>
               <div className=" rounded-md py-10 border-solid border-[#393E46] border-[1px] shadow-2xl ">

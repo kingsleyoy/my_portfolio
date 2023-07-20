@@ -17,7 +17,7 @@ const Experience = () => {
     setBackward(!backward);
   };
   return (
-    <div className=" w-full py-10 md:py-14" id="experience">
+    <div className=" w-full py-10 md:py-14 " id="experience">
       <div className=" w-[90%] md:w-[80%] mx-auto ">
         <div className=" flex flex-col gap-10 justify-center md:flex-row md:justify-between">
           <h3 className=" text-xl md:text-2xl font-bold myshade  dark:text-[#EEEEEE] text-center md:text-left">

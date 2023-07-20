@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
 import { BsMoonStarsFill, BsSun } from "react-icons/bs";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { navList } from "../../constant/Constant";
@@ -17,8 +16,9 @@ const Navbar = () => {
   const handleMenu = () => {
     setMenu(!menu);
   };
+
   const shade = localStorage.getItem("mode");
-  console.log(shade);
+  // console.log(shade);
 
   if (shade === "true") {
     document.documentElement.classList.add("dark");
@@ -30,8 +30,16 @@ const Navbar = () => {
     setMenu(false);
   };
 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  };
   return (
-    <div className=" w-full sticky top-0 bg-white dark:bg-[#232931] z-[999]">
+    <div className=" w-full sticky top-0 bg-white dark:bg-[#232931] z-[999] ">
       <div className=" w-[90%] md:w-[80%] mx-auto flex justify-between items-center h-10 md:h-[60px] mont text-[#555] dark:text-white">
         <h3 className=" font-bold uppercase md:text-xl text-lg z-[999]">
           King<span className=" text-[#4ECCA3]">sley</span>
@@ -54,16 +62,13 @@ const Navbar = () => {
               key={id}
               className=" hover:text-[#4ECCA3] duration-300 cursor-pointer"
             >
-              <Link
-                activeClass="active"
-                to="contact" //could be the name of the id
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
+              <span
+                onClick={() => {
+                  scrollToSection(link);
+                }}
               >
                 {name}
-              </Link>
+              </span>
             </li>
           ))}
         </ul>
@@ -100,17 +105,13 @@ const Navbar = () => {
                 className=" py-5 hover:text-[#4ECCA3]"
                 onClick={closeMenu}
               >
-                <Link
-                  activeClass="active"
-                  to={link} //could be the name of the id
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  onClick={closeMenu}
+                <span
+                  onClick={() => {
+                    scrollToSection(link);
+                  }}
                 >
                   {name}
-                </Link>
+                </span>
               </li>
             ))}
           </ul>
