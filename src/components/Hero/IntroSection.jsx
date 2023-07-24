@@ -28,7 +28,7 @@ const IntroSection = () => {
 
           <div className=" flex flex-col md:flex-row gap-5 pt-4">
             <a href="mailto:kingsleyoyeokz@gmail.com">
-              <button className=" border-2 px-5 py-1 md:py-[4px] border-[#4ECCA3] mycolor font-semibold rounded-full hover:bg-[#4ECCA3] hover:text-[#444]">
+              <button className=" animate-bounce md:animate-none border-2 px-5 py-1 md:py-[4px] border-[#4ECCA3] mycolor font-semibold rounded-full hover:bg-[#4ECCA3] hover:text-[#444]">
                 Hire me
               </button>
             </a>
@@ -37,17 +37,17 @@ const IntroSection = () => {
               <p className=" font-semibold capitalize dark:text-[#EBEBEB]">
                 follow me:
               </p>
-              <div className=" flex gap-2 ">
-                <span className=" border-[1px] p-[2px] text-xl md:text-lg border-[#4ECCA3] mycolor rounded-full">
+              <div className=" flex gap-3  ">
+                <span className=" border-[1px] p-[2px] text-xl md:text-lg border-[#4ECCA3] mycolor rounded-full hover:bg-[#4ECCA3] hover:text-[#444] hover:scale-110">
                   <FaFacebookF />
                 </span>
-                <span className=" border-[1px] p-[2px] text-xl md:text-lg border-[#4ECCA3] mycolor rounded-full">
+                <span className=" border-[1px] p-[2px] text-xl md:text-lg border-[#4ECCA3] mycolor rounded-full hover:bg-[#4ECCA3] hover:text-[#444] hover:scale-110">
                   <FaTwitter />
                 </span>
-                <span className=" border-[1px] p-[2px] text-xl md:text-lg border-[#4ECCA3] mycolor rounded-full">
+                <span className=" border-[1px] p-[2px] text-xl md:text-lg border-[#4ECCA3] mycolor rounded-full hover:bg-[#4ECCA3] hover:text-[#444] hover:scale-110">
                   <FaInstagram />
                 </span>
-                <span className=" border-[1px] p-[2px] text-xl md:text-lg border-[#4ECCA3] mycolor rounded-full">
+                <span className=" border-[1px] p-[2px] text-xl md:text-lg border-[#4ECCA3] mycolor rounded-full hover:bg-[#4ECCA3] hover:text-[#444] hover:scale-110">
                   <FaLinkedinIn />
                 </span>
               </div>

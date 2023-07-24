@@ -1,5 +1,6 @@
 import React from "react";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaArrowRight } from "react-icons/fa";
+
 import pic from "../../assets/pic1.jpg";
 
 const Project = () => {
@@ -37,9 +38,12 @@ const Project = () => {
               </p>
               <a
                 href="http"
-                className=" font-semibold relative text-[13px] md:text-[15px] mycolor"
+                className=" font-semibold relative text-[13px] md:text-[15px] mycolor flex items-center gap-2"
               >
-                View website
+                <p>View website</p>
+                <span className=" group-hover:animate-ping">
+                  <FaArrowRight />
+                </span>
               </a>
             </div>
           </div>
@@ -60,9 +64,12 @@ const Project = () => {
               </p>
               <a
                 href="http"
-                className=" font-semibold relative text-[13px] md:text-[15px] mycolor"
+                className=" font-semibold relative text-[13px] md:text-[15px] mycolor flex items-center gap-2"
               >
-                View website
+                <p>View website</p>
+                <span className=" group-hover:animate-ping">
+                  <FaArrowRight />
+                </span>
               </a>
             </div>
           </div>
@@ -83,9 +90,12 @@ const Project = () => {
               </p>
               <a
                 href="http"
-                className=" font-semibold relative text-[13px] md:text-[15px] mycolor"
+                className=" font-semibold relative text-[13px] md:text-[15px] mycolor flex items-center gap-2"
               >
-                View website
+                <p>View website</p>
+                <span className=" group-hover:animate-ping">
+                  <FaArrowRight />
+                </span>
               </a>
             </div>
           </div>
