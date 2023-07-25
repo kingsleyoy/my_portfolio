@@ -11,7 +11,7 @@ const About = () => {
       id="about"
     >
       <motion.div
-        initial={{ scale: 0.5 }}
+        initial={{ scale: 0.5, opacity: 0.4 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: false }}

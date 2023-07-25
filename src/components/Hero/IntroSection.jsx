@@ -33,10 +33,15 @@ const IntroSection = () => {
           <h2 className=" text-base md:text-xl font-semibold pb-5 dark:text-[#CCC]">
             Fullstack web developer
           </h2>
-          <p className=" text-[13px] md:text-[15px] dark:text-[#FAFAFA]">
+          <motion.p
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 2 }}
+            className=" text-[13px] md:text-[15px] dark:text-[#FAFAFA]"
+          >
             I'm a passionate full-stack developer with a keen eye for creating
             innovative web solutions.
-          </p>
+          </motion.p>
 
           <div className=" flex flex-col md:flex-row gap-5 pt-4">
             <a href="mailto:kingsleyoyeokz@gmail.com">
@@ -45,7 +50,12 @@ const IntroSection = () => {
               </button>
             </a>
 
-            <div className=" flex gap-6 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 2 }}
+              className=" flex gap-6 items-center"
+            >
               <p className=" font-semibold capitalize dark:text-[#EBEBEB]">
                 follow me:
               </p>
@@ -63,7 +73,7 @@ const IntroSection = () => {
                   <FaLinkedinIn />
                 </span>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className=" flex-1  md:w-1/2 flex justify-center">
