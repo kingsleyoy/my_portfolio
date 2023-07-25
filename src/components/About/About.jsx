@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useRef } from "react";
 import Aboutme from "../../assets/About.png";
+import { motion } from "framer-motion";
 
 const About = () => {
+  const scrollRef = useRef(null);
   return (
-    <div className=" bg-[#EEEEEE] w-full py-12 md:py-14 mont " id="about">
-      <div className=" w-[90%] md:w-[80%] mx-auto flex flex-col md:flex-row gap-10">
+    <div
+      ref={scrollRef}
+      className=" bg-[#EEEEEE] w-full py-12 md:py-14 mont "
+      id="about"
+    >
+      <motion.div
+        initial={{ scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: false }}
+        className=" w-[90%] md:w-[80%] mx-auto flex flex-col md:flex-row gap-10"
+      >
         <div className=" hidden md:flex md:w-1/2  justify-center">
           <div className=" w-[350px] h-[350px]">
             <img src={Aboutme} alt="About" className=" w-full h-full" />
@@ -78,7 +90,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

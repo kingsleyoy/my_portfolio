@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import Education from "./Education";
 import Experiment from "./Experiment";
+import { motion } from "framer-motion";
 
 const Experience = () => {
+  const scrollRef = useRef(null);
+
   const [forward, setForward] = useState(false);
   const [backward, setBackward] = useState(true);
 
@@ -17,8 +20,14 @@ const Experience = () => {
     setBackward(!backward);
   };
   return (
-    <div className=" w-full py-10 md:py-14 " id="experience">
-      <div className=" w-[90%] md:w-[80%] mx-auto ">
+    <div ref={scrollRef} className=" w-full py-10 md:py-14 " id="experience">
+      <motion.div
+        initial={{ scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: false }}
+        className=" w-[90%] md:w-[80%] mx-auto "
+      >
         <div className=" flex flex-col gap-10 justify-center md:flex-row md:justify-between">
           <h3 className=" text-xl md:text-2xl font-bold myshade  dark:text-[#EEEEEE] text-center md:text-left">
             <span
@@ -64,7 +73,7 @@ const Experience = () => {
           {forward && <Experiment />}
           {backward && <Education />}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
