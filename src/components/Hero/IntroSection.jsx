@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import banner from "../../assets/bannerImg.png";
+import { motion } from "framer-motion";
 import {
   FaFacebookF,
   FaTwitter,
@@ -8,9 +9,20 @@ import {
 } from "react-icons/fa";
 
 const IntroSection = () => {
+  const scrollRef = useRef(null);
   return (
-    <div className="w-full py-10  mont h-auto md:h-[80%] " id="hero">
-      <div className=" w-[90%] md:w-[80%] mx-auto flex flex-col-reverse md:flex-row gap-20">
+    <div
+      ref={scrollRef}
+      className="w-full py-10  mont h-auto md:h-[80%] "
+      id="hero"
+    >
+      <motion.div
+        initial={{ opacity: 0.3, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className=" w-[90%] md:w-[80%] mx-auto flex flex-col-reverse md:flex-row gap-20"
+      >
         <div className=" md:w-1/2 flex flex-col justify-center md:leading-[2]">
           <em className=" mycolor font-bold text-xl md:text-2xl capitalize pt-8">
             Hello i'm
@@ -59,7 +71,7 @@ const IntroSection = () => {
             <img src={banner} alt="banner" className="absolute" />
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
