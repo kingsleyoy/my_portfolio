@@ -26,10 +26,16 @@ const About = () => {
           <h2 className=" text-xl md:text-2xl font-bold  capitalize myblack pb-5 md:pb-8 text-center md:text-justify">
             About me
           </h2>
-          <p className=" text-[14px] md:text-[15px] font-medium myshade">
+          <motion.p
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5 }}
+            viewport={{ once: false }}
+            className=" text-[14px] md:text-[15px] font-medium myshade"
+          >
             Hello, I'm a passionate and skilled wed developer with several years
             of experience in the field of web development
-          </p>
+          </motion.p>
           <div className=" w-full flex flex-col gap-4 pt-4 md:pt-0">
             <div className=" w-full leading-10">
               <p className=" myshade text-[14px] md:text-[16px] font-bold">

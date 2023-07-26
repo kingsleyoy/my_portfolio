@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FaLinkedinIn, FaArrowRight } from "react-icons/fa";
 
 import pic from "../../assets/pic1.jpg";
+import { motion } from "framer-motion";
 
 const Project = () => {
+  const scrollRef = useRef(null);
   return (
     <div className=" bg-[#EEEEEE] w-full py-10 md:py-14 mont " id="project">
       <div className="  w-[90%] md:w-[80%] mx-auto ">
@@ -22,82 +24,106 @@ const Project = () => {
         </div>
 
         <div className=" w-full flex flex-col md:flex-row items-center gap-10 md:items-start md:gap-3 md:flex-wrap">
-          <div className=" mx-auto w-[90%] h-[380px] md:w-[350px] md:h-96  rounded-md shadow-2xl group">
-            <div className=" h-[60%] overflow-hidden rounded-tl-md rounded-tr-md">
-              <img
-                src={pic}
-                alt="picture1"
-                className=" object-fill w-full h-[100%]  group-hover:scale-105 rounded-tl-md rounded-tr-md "
-              />
-            </div>
-            <div className=" w-[80%] mx-auto flex flex-col gap-2">
-              <h3 className=" pt-3 font-bold text-lg myshade">Ahuse</h3>
-              <p className=" text-[12px] md:text-[14px] myshade">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Delectus, aspernatur.
-              </p>
-              <a
-                href="http"
-                className=" font-semibold relative text-[13px] md:text-[15px] mycolor flex items-center gap-2"
-              >
-                <p>View website</p>
-                <span className=" group-hover:animate-ping">
-                  <FaArrowRight />
-                </span>
-              </a>
-            </div>
+          <div ref={scrollRef}>
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, scale: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+              className=" mx-auto w-[90%] h-[380px] md:w-[350px] md:h-96  rounded-md shadow-2xl group"
+            >
+              <div className=" h-[60%] overflow-hidden rounded-tl-md rounded-tr-md">
+                <img
+                  src={pic}
+                  alt="picture1"
+                  className=" object-fill w-full h-[100%]  group-hover:scale-105 rounded-tl-md rounded-tr-md "
+                />
+              </div>
+              <div className=" w-[80%] mx-auto flex flex-col gap-2">
+                <h3 className=" pt-3 font-bold text-lg myshade">Ahuse</h3>
+                <p className=" text-[12px] md:text-[14px] myshade">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Delectus, aspernatur.
+                </p>
+                <a
+                  href="http"
+                  className=" font-semibold relative text-[13px] md:text-[15px] mycolor flex items-center gap-2"
+                >
+                  <p>View website</p>
+                  <span className=" group-hover:animate-ping">
+                    <FaArrowRight />
+                  </span>
+                </a>
+              </div>
+            </motion.div>
           </div>
 
-          <div className=" mx-auto w-[90%] h-[380px] md:w-[350px] md:h-96  rounded-md shadow-2xl group">
-            <div className=" h-[60%] overflow-hidden rounded-tl-md rounded-tr-md">
-              <img
-                src={pic}
-                alt="picture1"
-                className=" object-fill w-full h-[100%]  group-hover:scale-105 rounded-tl-md rounded-tr-md "
-              />
-            </div>
-            <div className=" w-[80%] mx-auto flex flex-col gap-2">
-              <h3 className=" pt-3 font-bold text-lg myshade">Ahuse</h3>
-              <p className=" text-[12px] md:text-[14px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Delectus, aspernatur.
-              </p>
-              <a
-                href="http"
-                className=" font-semibold relative text-[13px] md:text-[15px] mycolor flex items-center gap-2"
-              >
-                <p>View website</p>
-                <span className=" group-hover:animate-ping">
-                  <FaArrowRight />
-                </span>
-              </a>
-            </div>
+          <div ref={scrollRef}>
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, scale: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+              className=" mx-auto w-[90%] h-[380px] md:w-[350px] md:h-96  rounded-md shadow-2xl group"
+            >
+              <div className=" h-[60%] overflow-hidden rounded-tl-md rounded-tr-md">
+                <img
+                  src={pic}
+                  alt="picture1"
+                  className=" object-fill w-full h-[100%]  group-hover:scale-105 rounded-tl-md rounded-tr-md "
+                />
+              </div>
+              <div className=" w-[80%] mx-auto flex flex-col gap-2">
+                <h3 className=" pt-3 font-bold text-lg myshade">Ahuse</h3>
+                <p className=" text-[12px] md:text-[14px] myshade">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Delectus, aspernatur.
+                </p>
+                <a
+                  href="http"
+                  className=" font-semibold relative text-[13px] md:text-[15px] mycolor flex items-center gap-2"
+                >
+                  <p>View website</p>
+                  <span className=" group-hover:animate-ping">
+                    <FaArrowRight />
+                  </span>
+                </a>
+              </div>
+            </motion.div>
           </div>
 
-          <div className=" mx-auto w-[90%] h-[380px] md:w-[350px] md:h-96  rounded-md shadow-2xl group">
-            <div className=" h-[60%] overflow-hidden rounded-tl-md rounded-tr-md">
-              <img
-                src={pic}
-                alt="picture1"
-                className=" object-fill w-full h-[100%]  group-hover:scale-105 rounded-tl-md rounded-tr-md "
-              />
-            </div>
-            <div className=" w-[80%] mx-auto flex flex-col gap-2">
-              <h3 className=" pt-3 font-bold text-lg myshade">Ahuse</h3>
-              <p className=" text-[12px] md:text-[14px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Delectus, aspernatur.
-              </p>
-              <a
-                href="http"
-                className=" font-semibold relative text-[13px] md:text-[15px] mycolor flex items-center gap-2"
-              >
-                <p>View website</p>
-                <span className=" group-hover:animate-ping">
-                  <FaArrowRight />
-                </span>
-              </a>
-            </div>
+          <div ref={scrollRef}>
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, scale: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+              className=" mx-auto w-[90%] h-[380px] md:w-[350px] md:h-96  rounded-md shadow-2xl group"
+            >
+              <div className=" h-[60%] overflow-hidden rounded-tl-md rounded-tr-md">
+                <img
+                  src={pic}
+                  alt="picture1"
+                  className=" object-fill w-full h-[100%]  group-hover:scale-105 rounded-tl-md rounded-tr-md "
+                />
+              </div>
+              <div className=" w-[80%] mx-auto flex flex-col gap-2">
+                <h3 className=" pt-3 font-bold text-lg myshade">Ahuse</h3>
+                <p className=" text-[12px] md:text-[14px] myshade">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Delectus, aspernatur.
+                </p>
+                <a
+                  href="http"
+                  className=" font-semibold relative text-[13px] md:text-[15px] mycolor flex items-center gap-2"
+                >
+                  <p>View website</p>
+                  <span className=" group-hover:animate-ping">
+                    <FaArrowRight />
+                  </span>
+                </a>
+              </div>
+            </motion.div>
           </div>
         </div>
       </div>
