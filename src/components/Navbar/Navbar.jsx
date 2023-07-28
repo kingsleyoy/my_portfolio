@@ -1,26 +1,30 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BsMoonStarsFill, BsSun } from "react-icons/bs";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { navList } from "../../constant/Constant";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(localStorage.getItem("mode") === "true");
   const [menu, setMenu] = useState(false);
-  // const [shade, setShade] = useState(false);
 
   const handleOpen = () => {
-    setOpen(!open);
-    localStorage.setItem("mode", `${open}`);
+    const newMode = !open;
+    setOpen(newMode);
+    localStorage.setItem("mode", newMode.toString());
   };
+
+  useEffect(() => {
+    const storedMode = localStorage.getItem("mode");
+    if (storedMode !== null) {
+      setOpen(storedMode === "true");
+    }
+  }, []);
 
   const handleMenu = () => {
     setMenu(!menu);
   };
 
-  const shade = localStorage.getItem("mode");
-  // console.log(shade);
-
-  if (shade === "true") {
+  if (open) {
     document.documentElement.classList.add("dark");
   } else {
     document.documentElement.classList.remove("dark");
@@ -50,11 +54,7 @@ const Navbar = () => {
               onClick={handleOpen}
               className=" hover:text-[#ff0] cursor-pointer"
             >
-              {`${open}` === "true" ? (
-                <BsMoonStarsFill size={20} />
-              ) : (
-                <BsSun size={20} />
-              )}
+              {open ? <BsSun size={20} /> : <BsMoonStarsFill size={20} />}
             </span>
           </li>
           {navList.map(({ id, name, link }) => (
@@ -73,32 +73,36 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <span onClick={handleMenu} className="md:hidden z-[999]">
-          {menu ? (
-            <FaTimes size={20} style={{ color: "#4ECCA3" }} />
-          ) : (
-            <FaBars size={20} />
-          )}
-        </span>
+        <div className="md:hidden z-[999] flex gap-3 item-center">
+          <span
+            onClick={handleOpen}
+            className=" hover:text-[#ff0] cursor-pointer"
+          >
+            {open ? <BsSun size={18} /> : <BsMoonStarsFill size={18} />}
+          </span>
+          <span onClick={handleMenu} className="md:hidden z-[999]">
+            {menu ? (
+              <FaTimes size={20} style={{ color: "#4ECCA3" }} />
+            ) : (
+              <FaBars size={20} />
+            )}
+          </span>
+        </div>
 
         <div
           className={` h-screen top-0 ${
             menu ? "right-0" : "right-[-100%]"
           } md:hidden absolute w-full duration-300 bg-[#fff] dark:bg-[#232931] `}
         >
-          <ul className=" flex flex-col gap-8 items-center justify-center capitalize font-semibold cursor-pointer ">
-            <li className=" pt-[80px]">
+          <ul className=" flex flex-col gap-8 pt-[80px] items-center justify-center capitalize font-semibold cursor-pointer ">
+            {/* <li className=" pt-[80px]">
               <span
                 onClick={handleOpen}
                 className=" hover:text-[#ff0] cursor-pointer"
               >
-                {`${open}` === "true" ? (
-                  <BsMoonStarsFill size={20} />
-                ) : (
-                  <BsSun size={20} />
-                )}
+                {open ? <BsSun size={20} /> : <BsMoonStarsFill size={20} />}
               </span>
-            </li>
+            </li> */}
             {navList.map(({ id, name, link }) => (
               <li
                 key={id}
