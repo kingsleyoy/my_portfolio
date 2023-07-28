@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import banner from "../../assets/bannerImg.png";
+import banner from "../../assets/kings.png";
 import { motion } from "framer-motion";
 import {
   FaFacebookF,

@@ -32,8 +32,8 @@ const Choose = () => {
                 </div>
 
                 <div className="text-[12px] md:text-[14px] myshade">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellat quaerat expedita placeat fugit impedit at, voluptatum
+                  As a team player, I thrive in collaborative environments,
+                  valuing open communicaton and mutual respect.
                 </div>
               </div>
             </motion.div>
@@ -58,8 +58,8 @@ const Choose = () => {
                 </div>
 
                 <div className="text-[12px] md:text-[14px] myshade">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellat quaerat expedita placeat fugit impedit at, voluptatum
+                  Creativity is the core of my design philosophy. With a passion
+                  for innovation.
                 </div>
               </div>
             </motion.div>
@@ -84,8 +84,9 @@ const Choose = () => {
                 </div>
 
                 <div className="text-[12px] md:text-[14px] myshade">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellat quaerat expedita placeat fugit impedit at, voluptatum
+                  Being responsive is the key to delivering top-notch results in
+                  today's fast-paced world. I understand the importance of
+                  timely communication and feedback
                 </div>
               </div>
             </motion.div>

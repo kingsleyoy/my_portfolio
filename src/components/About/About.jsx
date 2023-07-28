@@ -33,7 +33,7 @@ const About = () => {
             viewport={{ once: false }}
             className=" text-[14px] md:text-[15px] font-medium myshade"
           >
-            Hello, I'm a passionate and skilled wed developer with several years
+            Hello, I'm a passionate and skilled web developer with several years
             of experience in the field of web development
           </motion.p>
           <div className=" w-full flex flex-col gap-4 pt-4 md:pt-0">
