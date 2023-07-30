@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import Boat from "../../assets/About.png";
 import { motion } from "framer-motion";
+import Final from "../../assets/final.png";
 
 const About = () => {
   const scrollRef = useRef(null);
@@ -19,7 +19,7 @@ const About = () => {
       >
         <div className=" hidden md:flex md:w-1/2  justify-center">
           <div className=" w-[350px] h-[350px]">
-            <img src={Boat} alt="About" className=" w-full h-full" />
+            <img src={Final} alt="About" className=" w-full h-full" />
           </div>
         </div>
         <div className=" md:w-1/2 flex flex-col ">

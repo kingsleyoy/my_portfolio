@@ -1,5 +1,5 @@
 import React from "react";
-import pics2 from "../../assets/pic2.jpg";
+import pics2 from "../../assets/pic1.jpg";
 import { Autoplay, Navigation, Pagination, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import "swiper/css";
