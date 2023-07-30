@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Aboutme from "../../assets/About.png";
+import Final from "../../assets/final.png";
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -19,7 +19,7 @@ const About = () => {
       >
         <div className=" hidden md:flex md:w-1/2  justify-center">
           <div className=" w-[350px] h-[350px]">
-            <img src={Aboutme} alt="About" className=" w-full h-full" />
+            <img src={Final} alt="About" className=" w-full h-full" />
           </div>
         </div>
         <div className=" md:w-1/2 flex flex-col ">
