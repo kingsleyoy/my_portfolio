@@ -7,7 +7,10 @@ import { motion } from "framer-motion";
 const Project = () => {
   const scrollRef = useRef(null);
   return (
-    <div className=" bg-[#EEEEEE] w-full py-10 md:py-14 mont " id="project">
+    <div
+      className=" bg-[#EEEEEE] w-full py-10 md:py-14 mont h-auto"
+      id="project"
+    >
       <div className="  w-[90%] md:w-[80%] mx-auto ">
         <div className=" md:flex justify-between mb-12">
           <h2 className=" text-xl md:text-2xl font-bold  capitalize myblack md:pb-8 text-center md:text-justify">

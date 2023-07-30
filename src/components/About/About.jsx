@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div
       ref={scrollRef}
-      className=" bg-[#EEEEEE] w-full py-12 md:py-14 mont "
+      className=" bg-[#EEEEEE] w-full py-12 md:py-14 mont h-auto"
       id="about"
     >
       <motion.div

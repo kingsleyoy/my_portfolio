@@ -12,7 +12,7 @@ import "swiper/scss/pagination";
 
 const Testimonial = () => {
   return (
-    <div className=" bg-[#EEEEEE] w-full py-10 md:py-14 mont ">
+    <div className=" bg-[#EEEEEE] w-full py-10 md:py-14 mont h-auto">
       <div className="  w-[90%] md:w-[80%] mx-auto ">
         <h3 className="text-xl md:text-2xl font-bold myshade pb-5 md:pb-8 text-center capitalize">
           Testimonials

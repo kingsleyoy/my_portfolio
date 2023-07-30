@@ -20,7 +20,11 @@ const Experience = () => {
     setBackward(!backward);
   };
   return (
-    <div ref={scrollRef} className=" w-full py-10 md:py-14 " id="experience">
+    <div
+      ref={scrollRef}
+      className=" w-full py-10 md:py-14 h-auto"
+      id="experience"
+    >
       <motion.div
         initial={{ scale: 0.5, opacity: 0.4 }}
         whileInView={{ opacity: 1, scale: 1 }}
