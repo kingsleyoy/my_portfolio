@@ -6,6 +6,9 @@ import { motion } from "framer-motion";
 
 const Project = () => {
   const scrollRef = useRef(null);
+  {
+    /* <div className=" w-full flex flex-col md:flex-row items-center gap-10 md:items-start md:gap-3 md:flex-wrap"></div> */
+  }
   return (
     <div
       className=" bg-[#EEEEEE] w-full py-10 md:py-14 mont h-auto"
@@ -26,7 +29,7 @@ const Project = () => {
           </a>
         </div>
 
-        <div className=" w-full flex flex-col md:flex-row items-center gap-10 md:items-start md:gap-3 md:flex-wrap">
+        <div className=" w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-20 lg:gap-10 ">
           <div ref={scrollRef}>
             <motion.div
               initial={{ opacity: 0, x: -100 }}

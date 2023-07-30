@@ -13,7 +13,7 @@ const IntroSection = () => {
   return (
     <div
       ref={scrollRef}
-      className="w-full py-10  mont h-auto md:h-[80%] "
+      className="w-full py-10 md:py-16 mont h-auto lg:h-[80%] "
       id="hero"
     >
       <motion.div
@@ -77,8 +77,17 @@ const IntroSection = () => {
           </div>
         </div>
         <div className=" flex-1  md:w-1/2 flex justify-center">
-          <div className=" h-[250px] w-[250px] md:h-[300px] md:w-[300px] bg-[#4ECCA3] rounded-tr-[30%] rounded-bl-[30%] relative">
-            <img src={banner} alt="banner" className="absolute" />
+          <div className=" h-[250px] w-[250px] md:h-auto lg:h-[300px] md:w-[300px] bg-[#4ECCA3] rounded-tr-[30%] rounded-bl-[30%] relative">
+            <img
+              src={banner}
+              alt="banner"
+              className="absolute md:h-full md:top-[50%] md:left-[50%] md:-translate-x-[50%] md:-translate-y-[40%] lg:hidden"
+            />
+            <img
+              src={banner}
+              alt="banner"
+              className="hidden lg:block absolute"
+            />
           </div>
         </div>
       </motion.div>

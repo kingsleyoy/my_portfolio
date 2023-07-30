@@ -30,7 +30,7 @@ const Experience = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: false }}
-        className=" w-[90%] md:w-[80%] mx-auto "
+        className=" w-[90%] lg:w-[80%] mx-auto "
       >
         <div className=" flex flex-col gap-10 justify-center md:flex-row md:justify-between">
           <h3 className=" text-xl md:text-2xl font-bold myshade  dark:text-[#EEEEEE] text-center md:text-left">
@@ -73,7 +73,7 @@ const Experience = () => {
             </span>
           </div>
         </div>
-        <div className=" w-full md:pl-[250px] flex md:ml-[400px]">
+        <div className=" w-full lg:pl-[250px] flex md:ml-[400px]">
           {forward && <Experiment />}
           {backward && <Education />}
         </div>
