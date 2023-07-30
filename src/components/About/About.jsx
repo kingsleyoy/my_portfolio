@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Aboutme from "../../assets/kingsabout.png";
+import Aboutme from "../../assets/abt.png";
 import { motion } from "framer-motion";
 
 const About = () => {
