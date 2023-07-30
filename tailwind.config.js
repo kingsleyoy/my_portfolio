@@ -8,7 +8,7 @@ module.exports = {
         "3xl": "0 1px 2px 0 #393E46",
       },
       backgroundImage: {
-        k2: "linear-gradient( 109.6deg,  #232931 11.2%, #393E46 91.1% )",
+        k2: "linear-gradient( 109.6deg,  #232931 11.2%, #000 91.1% )",
       },
     },
   },
