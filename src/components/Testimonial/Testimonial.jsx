@@ -17,24 +17,28 @@ const Testimonial = () => {
       name: "name",
       title: "title",
       picture: pics2,
+      id: "001",
     },
     {
       msg: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error qui doloremque nisi, molestiae harum!",
       name: "name",
       title: "title",
       picture: pics2,
+      id: "002",
     },
     {
       msg: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error qui doloremque nisi, molestiae harum!",
       name: "name",
       title: "title",
       picture: pics2,
+      id: "003",
     },
     {
       msg: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error qui doloremque nisi, molestiae harum!",
       name: "name",
       title: "title",
       picture: pics2,
+      id: "004",
     },
   ];
   return (
@@ -56,11 +60,8 @@ const Testimonial = () => {
             pagination={{ clickable: true }}
           >
             {testInfo.map((data, id) => (
-              <SwiperSlide>
-                <div
-                  key={id}
-                  className=" rounded-md shadow-2xl py-12 border-solid border-[#393E46] border-[1px]"
-                >
+              <SwiperSlide key={id}>
+                <div className=" rounded-md shadow-2xl py-12 border-solid border-[#393E46] border-[1px]">
                   <div className=" w-[90%] mx-auto flex flex-col gap-5">
                     <div className=" ">
                       "<em>{data.msg}</em>"
@@ -100,11 +101,8 @@ const Testimonial = () => {
             pagination={{ clickable: true }}
           >
             {testInfo.map((data, id) => (
-              <SwiperSlide>
-                <div
-                  key={id}
-                  className=" rounded-md py-10 border-solid border-[#393E46] border-[1px] shadow-2xl "
-                >
+              <SwiperSlide key={id}>
+                <div className=" rounded-md py-10 border-solid border-[#393E46] border-[1px] shadow-2xl ">
                   <div className=" w-[90%] mx-auto flex flex-col gap-5">
                     <div className=" ">
                       "<em className=" text-[#000]">{data.msg}</em>"

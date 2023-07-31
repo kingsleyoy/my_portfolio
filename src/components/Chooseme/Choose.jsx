@@ -37,7 +37,7 @@ const Choose = () => {
                 whileInView={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: false }}
-                className=" mx-auto w-[90%] h-[300px] grid-cols-1 lg:h-80  rounded-md shadow-2xl bg-[#CCC]"
+                className=" mx-auto w-[90%] h-[280px] md:h-[300px] grid-cols-1 lg:h-80  rounded-md shadow-2xl bg-[#CCC]"
               >
                 <div className=" w-[80%] mx-auto flex flex-col gap-6">
                   <div className=" flex flex-col items-center pt-5">
