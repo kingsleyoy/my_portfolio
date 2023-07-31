@@ -13,7 +13,7 @@ const IntroSection = () => {
   return (
     <div
       ref={scrollRef}
-      className="w-full py-10 md:py-16 mont h-auto lg:h-[80%] "
+      className="w-full py-10 md:py-16 mont h-auto lg:h-[80%] dark:bg-k2"
       id="hero"
     >
       <motion.div

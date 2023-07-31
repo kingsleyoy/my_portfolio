@@ -5,7 +5,7 @@ import Final from "../../assets/final.png";
 const About = () => {
   const scrollRef = useRef(null);
   return (
-    <div
+    <section
       ref={scrollRef}
       className=" bg-[#EEEEEE] w-full py-12 md:py-14 mont h-auto"
       id="about"
@@ -97,7 +97,7 @@ const About = () => {
           </div>
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 

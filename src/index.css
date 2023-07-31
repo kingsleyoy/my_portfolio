@@ -42,7 +42,7 @@ input{
    outline-color: #4ECCA3;
    padding-top: 10px;
    padding-left: 10px;
-   background-color: #393E46;
+   /* background-color: #393E46; */
    color: #EEEEEE;
 }
 
@@ -51,9 +51,7 @@ textarea{
     width: 100%;
     outline-color: #4ECCA3;
     padding-left: 10px;
-    background-color: #393E46;
+    /* background-color: #393E46; */
     color: #EEEEEE;
 }
 
-/* background-image: linear-gradient( 109.6deg,  rgba(102,51,153,1) 11.2%, rgba(2,0,4,1) 91.1% );
-background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% ); */

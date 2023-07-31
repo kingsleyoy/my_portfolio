@@ -11,6 +11,32 @@ import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 
 const Testimonial = () => {
+  const testInfo = [
+    {
+      msg: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error qui doloremque nisi, molestiae harum!",
+      name: "name",
+      title: "title",
+      picture: pics2,
+    },
+    {
+      msg: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error qui doloremque nisi, molestiae harum!",
+      name: "name",
+      title: "title",
+      picture: pics2,
+    },
+    {
+      msg: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error qui doloremque nisi, molestiae harum!",
+      name: "name",
+      title: "title",
+      picture: pics2,
+    },
+    {
+      msg: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error qui doloremque nisi, molestiae harum!",
+      name: "name",
+      title: "title",
+      picture: pics2,
+    },
+  ];
   return (
     <div className=" bg-[#EEEEEE] w-full py-10 md:py-14 mont h-auto">
       <div className="  w-[90%] md:w-[80%] mx-auto ">
@@ -20,134 +46,48 @@ const Testimonial = () => {
 
         <div className=" hidden md:block mont">
           <Swiper
-            modules={[Pagination, A11y]}
+            modules={[Autoplay, Navigation, Pagination, A11y]}
             spaceBetween={50}
             slidesPerView={3}
             Navigation
+            autoplay={{
+              delay: 7000,
+            }}
             pagination={{ clickable: true }}
           >
-            <SwiperSlide>
-              <div className=" rounded-md shadow-2xl py-12 border-solid border-[#393E46] border-[1px]">
-                <div className=" w-[90%] mx-auto flex flex-col gap-5">
-                  <div className=" ">
-                    "
-                    <em>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Natus error qui doloremque nisi, molestiae harum!
-                    </em>
-                    "
-                  </div>
+            {testInfo.map((data, id) => (
+              <SwiperSlide>
+                <div
+                  key={id}
+                  className=" rounded-md shadow-2xl py-12 border-solid border-[#393E46] border-[1px]"
+                >
+                  <div className=" w-[90%] mx-auto flex flex-col gap-5">
+                    <div className=" ">
+                      "<em>{data.msg}</em>"
+                    </div>
 
-                  <div className=" flex justify-center items-center gap-3">
-                    <span className=" w-20 h-20  ">
-                      <img
-                        src={pics2}
-                        alt="pix"
-                        className=" rounded-full shadow object-cover w-full h-full"
-                      />
-                    </span>
+                    <div className=" flex justify-center items-center gap-3">
+                      <span className=" w-20 h-20  ">
+                        <img
+                          src={data.picture}
+                          alt="pix"
+                          className=" rounded-full shadow object-cover w-full h-full"
+                        />
+                      </span>
 
-                    <div>
-                      <p>name</p>
-                      <p>title</p>
+                      <div>
+                        <p>{data.name}</p>
+                        <p>{data.title}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className=" rounded-md shadow-2xl py-12 border-solid border-[#393E46] border-[1px]">
-                <div className=" w-[90%] mx-auto flex flex-col gap-5">
-                  <div className=" ">
-                    "
-                    <em className=" text-[#000]">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Natus error qui doloremque nisi, molestiae harum!
-                    </em>
-                    "
-                  </div>
-
-                  <div className=" flex justify-center items-center gap-3">
-                    <span className=" w-20 h-20  ">
-                      <img
-                        src={pics2}
-                        alt="pix"
-                        className=" rounded-full shadow object-cover w-full h-full"
-                      />
-                    </span>
-
-                    <div>
-                      <p>name</p>
-                      <p>title</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className=" rounded-md shadow-2xl py-12 border-solid border-[#393E46] border-[1px]">
-                <div className=" w-[90%] mx-auto flex flex-col gap-5">
-                  <div className=" ">
-                    "
-                    <em className=" text-[#000]">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Natus error qui doloremque nisi, molestiae harum!
-                    </em>
-                    "
-                  </div>
-
-                  <div className=" flex justify-center items-center gap-3">
-                    <span className=" w-20 h-20  ">
-                      <img
-                        src={pics2}
-                        alt="pix"
-                        className=" rounded-full shadow object-cover w-full h-full"
-                      />
-                    </span>
-
-                    <div>
-                      <p>name</p>
-                      <p>title</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className=" rounded-md shadow-2xl py-12 border-solid border-[#393E46] border-[1px]">
-                <div className=" w-[90%] mx-auto flex flex-col gap-5">
-                  <div className=" ">
-                    "
-                    <em className=" text-[#000]">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Natus error qui doloremque nisi, molestiae harum!
-                    </em>
-                    "
-                  </div>
-
-                  <div className=" flex justify-center items-center gap-3">
-                    <span className=" w-20 h-20  ">
-                      <img
-                        src={pics2}
-                        alt="pix"
-                        className=" rounded-full shadow object-cover w-full h-full"
-                      />
-                    </span>
-
-                    <div>
-                      <p>name</p>
-                      <p>title</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
 
+        {/* Swiper on mobile devices */}
         <div className=" w-[90%] mx-auto md:hidden mont">
           <Swiper
             modules={[Autoplay, Navigation, Pagination, A11y]}
@@ -159,125 +99,35 @@ const Testimonial = () => {
             }}
             pagination={{ clickable: true }}
           >
-            <SwiperSlide>
-              <div className=" rounded-md py-10 border-solid border-[#393E46] border-[1px] shadow-2xl ">
-                <div className=" w-[90%] mx-auto flex flex-col gap-5">
-                  <div className=" ">
-                    "
-                    <em className=" text-[#000]">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Natus error qui doloremque nisi, molestiae harum!
-                    </em>
-                    "
-                  </div>
+            {testInfo.map((data, id) => (
+              <SwiperSlide>
+                <div
+                  key={id}
+                  className=" rounded-md py-10 border-solid border-[#393E46] border-[1px] shadow-2xl "
+                >
+                  <div className=" w-[90%] mx-auto flex flex-col gap-5">
+                    <div className=" ">
+                      "<em className=" text-[#000]">{data.msg}</em>"
+                    </div>
 
-                  <div className=" flex justify-center items-center gap-3">
-                    <span className=" w-20 h-20  ">
-                      <img
-                        src={pics2}
-                        alt="pix"
-                        className=" rounded-full shadow object-cover w-full h-full"
-                      />
-                    </span>
+                    <div className=" flex justify-center items-center gap-3">
+                      <span className=" w-20 h-20  ">
+                        <img
+                          src={data.picture}
+                          alt="pix"
+                          className=" rounded-full shadow object-cover w-full h-full"
+                        />
+                      </span>
 
-                    <div>
-                      <p>name</p>
-                      <p>title</p>
+                      <div>
+                        <p>{data.name}</p>
+                        <p>{data.title}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className=" rounded-md py-10 border-solid border-[#393E46] border-[1px] shadow-2xl ">
-                <div className=" w-[90%] mx-auto flex flex-col gap-5">
-                  <div className=" ">
-                    "
-                    <em className=" text-[#000]">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Natus error qui doloremque nisi, molestiae harum!
-                    </em>
-                    "
-                  </div>
-
-                  <div className=" flex justify-center items-center gap-3">
-                    <span className=" w-20 h-20  ">
-                      <img
-                        src={pics2}
-                        alt="pix"
-                        className=" rounded-full shadow object-cover w-full h-full"
-                      />
-                    </span>
-
-                    <div>
-                      <p>name</p>
-                      <p>title</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className=" rounded-md py-10 border-solid border-[#393E46] border-[1px] shadow-2xl ">
-                <div className=" w-[90%] mx-auto flex flex-col gap-5">
-                  <div className=" ">
-                    "
-                    <em className=" text-[#000]">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Natus error qui doloremque nisi, molestiae harum!
-                    </em>
-                    "
-                  </div>
-
-                  <div className=" flex justify-center items-center gap-3">
-                    <span className=" w-20 h-20  ">
-                      <img
-                        src={pics2}
-                        alt="pix"
-                        className=" rounded-full shadow object-cover w-full h-full"
-                      />
-                    </span>
-
-                    <div>
-                      <p>name</p>
-                      <p>title</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className=" rounded-md py-10 border-solid border-[#393E46] border-[1px] shadow-2xl ">
-                <div className=" w-[90%] mx-auto flex flex-col gap-5">
-                  <div className=" ">
-                    "
-                    <em className=" text-[#000]">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Natus error qui doloremque nisi, molestiae harum!
-                    </em>
-                    "
-                  </div>
-
-                  <div className=" flex justify-center items-center gap-3">
-                    <span className=" w-20 h-20  ">
-                      <img
-                        src={pics2}
-                        alt="pix"
-                        className=" rounded-full shadow object-cover w-full h-full"
-                      />
-                    </span>
-
-                    <div>
-                      <p>name</p>
-                      <p>title</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>

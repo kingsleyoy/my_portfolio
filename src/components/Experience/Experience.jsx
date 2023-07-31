@@ -22,7 +22,7 @@ const Experience = () => {
   return (
     <div
       ref={scrollRef}
-      className=" w-full py-10 md:py-14 h-auto"
+      className=" w-full py-10 md:py-14 h-auto dark:bg-k2"
       id="experience"
     >
       <motion.div

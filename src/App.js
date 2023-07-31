@@ -11,7 +11,7 @@ import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
-    <div className=" w-full h-screen dark:bg-k2 overflow-x-hidden">
+    <div className=" w-full h-screen  overflow-x-hidden">
       <Navbar />
       <IntroSection />
       <About />
