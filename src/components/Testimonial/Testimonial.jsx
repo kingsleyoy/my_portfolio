@@ -1,6 +1,6 @@
 import React from "react";
 import pics2 from "../../assets/pic1.jpg";
-import { Autoplay, Navigation, Pagination, A11y } from "swiper/modules";
+import { Autoplay, Pagination, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import "swiper/css";
 // import "swiper/css/navigation";
@@ -50,10 +50,9 @@ const Testimonial = () => {
 
         <div className=" hidden md:block mont">
           <Swiper
-            modules={[Autoplay, Navigation, Pagination, A11y]}
+            modules={[Autoplay, Pagination, A11y]}
             spaceBetween={50}
             slidesPerView={3}
-            Navigation
             autoplay={{
               delay: 7000,
             }}
@@ -61,14 +60,10 @@ const Testimonial = () => {
           >
             {testInfo.map((data, id) => (
               <SwiperSlide key={id}>
-                <div className=" rounded-md shadow-2xl py-12 border-solid border-[#393E46] border-[1px]">
+                <div className="  shadow-2xl py-6 bg-kg">
                   <div className=" w-[90%] mx-auto flex flex-col gap-5">
-                    <div className=" ">
-                      "<em>{data.msg}</em>"
-                    </div>
-
-                    <div className=" flex justify-center items-center gap-3">
-                      <span className=" w-20 h-20  ">
+                    <div className=" flex  py-2 items-center gap-3 border-b-[1px] border-solid border-[#393E46]">
+                      <span className=" w-16 h-16   ">
                         <img
                           src={data.picture}
                           alt="pix"
@@ -80,6 +75,10 @@ const Testimonial = () => {
                         <p>{data.name}</p>
                         <p>{data.title}</p>
                       </div>
+                    </div>
+
+                    <div className=" ">
+                      <em>{data.msg}</em>
                     </div>
                   </div>
                 </div>
@@ -91,10 +90,9 @@ const Testimonial = () => {
         {/* Swiper on mobile devices */}
         <div className=" w-[90%] mx-auto md:hidden mont">
           <Swiper
-            modules={[Autoplay, Navigation, Pagination, A11y]}
+            modules={[Autoplay, Pagination, A11y]}
             spaceBetween={50}
             slidesPerView={1}
-            Navigation
             autoplay={{
               delay: 5000,
             }}
@@ -102,14 +100,10 @@ const Testimonial = () => {
           >
             {testInfo.map((data, id) => (
               <SwiperSlide key={id}>
-                <div className=" rounded-md py-10 border-solid border-[#393E46] border-[1px] shadow-2xl ">
+                <div className="  shadow-2xl py-6 bg-kg">
                   <div className=" w-[90%] mx-auto flex flex-col gap-5">
-                    <div className=" ">
-                      "<em className=" text-[#000]">{data.msg}</em>"
-                    </div>
-
-                    <div className=" flex justify-center items-center gap-3">
-                      <span className=" w-20 h-20  ">
+                    <div className=" flex  py-2 items-center gap-3 border-b-[1px] border-solid border-[#393E46]">
+                      <span className=" w-14 h-14   ">
                         <img
                           src={data.picture}
                           alt="pix"
@@ -117,10 +111,14 @@ const Testimonial = () => {
                         />
                       </span>
 
-                      <div>
+                      <div className=" text-[14px] font-semibold">
                         <p>{data.name}</p>
                         <p>{data.title}</p>
                       </div>
+                    </div>
+
+                    <div className=" ">
+                      <em>{data.msg}</em>
                     </div>
                   </div>
                 </div>

@@ -10,6 +10,9 @@ module.exports = {
       backgroundImage: {
         k2: "linear-gradient( 109.6deg,  #232931 11.2%, #000 91.1% )",
       },
+      backgroundColor: {
+        kg: "rgba(0,0,0,0.1)",
+      },
     },
   },
   plugins: [],

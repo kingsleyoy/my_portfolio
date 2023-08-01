@@ -6,9 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const form = useRef();
-  console.log(process.env.REACT_APP_SERVICEID);
-  console.log(process.env.REACT_APP_TEMPLATEID);
-  console.log(process.env.REACT_APP_PUBLICKEY);
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -22,7 +20,7 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          toast.success("Email successful");
+          toast.success("Message delivered successfully");
         },
         (error) => {
           console.log(error.text);
@@ -65,7 +63,7 @@ const Contact = () => {
             </div>
           </div>
           <div className=" w-full ">
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail} className="w-full">
               <label
                 htmlFor="name"
                 className=" text-[#232931] dark:text-[#EEEEEE] font-medium "
@@ -110,9 +108,10 @@ const Contact = () => {
               ></textarea>
               <ToastContainer position="top-center" />
               <br />
+
               <button
                 type="submit"
-                className="  bg-[#4ECCA3] px-11 py-2 text-white font-bold hover:bg-orange-400 rounded-md"
+                className="  bg-[#4ECCA3] w-[60%] md:w-[50%] mx-auto block px-11 py-2 text-white font-bold hover:bg-orange-400 rounded-md"
                 value="Send"
               >
                 Submit
