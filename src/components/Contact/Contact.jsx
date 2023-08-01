@@ -6,7 +6,9 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const form = useRef();
-
+  console.log(process.env.REACT_APP_SERVICEID);
+  console.log(process.env.REACT_APP_TEMPLATEID);
+  console.log(process.env.REACT_APP_PUBLICKEY);
   const sendEmail = (e) => {
     e.preventDefault();
 
