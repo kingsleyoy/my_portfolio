@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section
       ref={scrollRef}
-      className=" bg-[#EEEEEE] w-full py-12 md:py-14 mont h-auto"
+      className=" bg-[#EEEEEE] w-full py-12 md:py-14 lg:py-20 mont h-auto"
       id="about"
     >
       <motion.div

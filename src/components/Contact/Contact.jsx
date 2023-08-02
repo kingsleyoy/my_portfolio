@@ -87,7 +87,7 @@ const Contact = () => {
               <br />
               <input
                 type="text"
-                placeholder="E-mail Address"
+                placeholder="your email*"
                 className=" dark:bg-[#393E46] bg-[#CCC] rounded-md text-[#232931] dark:text-[#EEEEEE]"
                 name="from_email"
               />

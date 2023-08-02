@@ -23,7 +23,7 @@ const Project = () => {
 
   return (
     <section
-      className=" bg-[#EEEEEE] w-full py-10 md:py-14 mont h-auto"
+      className=" bg-[#EEEEEE] w-full py-10 md:py-14 lg:py-20 mont h-auto"
       id="project"
     >
       <div className=" w-[80%] mx-auto ">

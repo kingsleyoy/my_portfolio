@@ -13,7 +13,7 @@ const IntroSection = () => {
   return (
     <div
       ref={scrollRef}
-      className="w-full py-10 md:py-16 mont h-auto lg:h-[80%] dark:bg-k2"
+      className="w-full py-10 lg:pb-16 md:py-16 mont h-auto lg:h-[80%] dark:bg-k2"
       id="hero"
     >
       <motion.div
@@ -61,16 +61,35 @@ const IntroSection = () => {
               </p>
               <div className=" flex gap-3  ">
                 <span className=" border-[1px] p-[2px] text-xl md:text-lg border-[#4ECCA3] mycolor rounded-full hover:bg-[#4ECCA3] hover:text-[#444] hover:scale-110">
+                  <a
+                    href="https://www.linkedin.com/in/kingsley-oyeoka-640917266"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaLinkedinIn />
+                  </a>
+                </span>
+                <span className=" border-[1px] p-[2px] text-xl md:text-lg border-[#4ECCA3] mycolor rounded-full hover:bg-[#4ECCA3] hover:text-[#444] hover:scale-110">
+                  <a
+                    href="https://twitter.com/techygenius77"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaTwitter />
+                  </a>
+                </span>
+                <span className=" border-[1px] p-[2px] text-xl md:text-lg border-[#4ECCA3] mycolor rounded-full hover:bg-[#4ECCA3] hover:text-[#444] hover:scale-110">
+                  <a
+                    href="https://instagram.com/techygenius77??igshid=ZGUzMzM3NWJiOQ=="
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaInstagram />
+                  </a>
+                </span>
+
+                <span className=" border-[1px] p-[2px] text-xl md:text-lg border-[#4ECCA3] mycolor rounded-full hover:bg-[#4ECCA3] hover:text-[#444] hover:scale-110">
                   <FaFacebookF />
-                </span>
-                <span className=" border-[1px] p-[2px] text-xl md:text-lg border-[#4ECCA3] mycolor rounded-full hover:bg-[#4ECCA3] hover:text-[#444] hover:scale-110">
-                  <FaTwitter />
-                </span>
-                <span className=" border-[1px] p-[2px] text-xl md:text-lg border-[#4ECCA3] mycolor rounded-full hover:bg-[#4ECCA3] hover:text-[#444] hover:scale-110">
-                  <FaInstagram />
-                </span>
-                <span className=" border-[1px] p-[2px] text-xl md:text-lg border-[#4ECCA3] mycolor rounded-full hover:bg-[#4ECCA3] hover:text-[#444] hover:scale-110">
-                  <FaLinkedinIn />
                 </span>
               </div>
             </motion.div>
